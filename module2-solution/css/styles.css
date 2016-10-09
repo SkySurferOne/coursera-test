@@ -1,0 +1,126 @@
+/*
+    Authr: Damian Hanusiak
+    Title: Coursiera course html-css-javascript-for-web-developers styles
+*/
+
+/* general */
+* {
+   box-sizing: border-box; 
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    padding: 3px 15px;
+    font-size: 1.25em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#article-1 h2 {
+    background-color: darksalmon;
+}
+
+#article-2 h2 {
+    background-color: firebrick;
+}
+
+#article-3 h2 {
+    background-color: burlywood;
+}
+
+article > .wrapper {
+    background-color: darkgrey;
+    border: 1px solid #000;
+    padding: 30px 15px 15px;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.row {
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .col-lg-3 {
+        float: left;
+        padding: 0 15px;
+    }
+    
+    .col-lg-3 {
+        width: 33.33%;
+    }
+}
+
+/* tablet */
+@media (min-width: 776px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+        padding: 0 15px;
+    }
+    
+    .col-md-6 {
+        width: 50%;
+    }
+    
+    .col-md-12 {
+        width: 100%;
+    }
+    
+    #article-3 {
+        margin-top: 30px;
+    }
+}
+
+/* mobile */
+@media (max-width: 775px) {
+    article {
+        margin-bottom: 30px;
+    }
+    
+    article:last-of-type {
+        margin-bottom: 0px;
+    }
+    
+    .col-sm-12 {
+        float: left;
+        padding: 0 15px;
+    }
+    
+    .col-sm-12 {
+        width: 100%;
+    }
+}
